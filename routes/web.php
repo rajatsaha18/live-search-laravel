@@ -6,6 +6,8 @@ use App\Http\Controllers\SearchController;
 
 Route::get('/', [SearchController::class,'index'])->name('home');
 Route::get('/live-search', [SearchController::class, 'search'])->name('liveSearch');
+Route::get('/form', [SearchController::class, 'form'])->name('form');
+Route::post('/from-submit', [SearchController::class, 'submit'])->name('ajax.submit');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

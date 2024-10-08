@@ -13,6 +13,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
+                    <a href="{{ route('form') }}" class="btn btn-success">Form</a>
                     <h1>Live Search</h1>
                     <input type="text" id="search" name="title" placeholder="Search...">
 
